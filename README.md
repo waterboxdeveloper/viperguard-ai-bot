@@ -1,12 +1,12 @@
-# 🤖 Bot Moderador Python CDMX
+# 🐍 ViperGuard AI
 
-**Bot moderador inteligente con IA para el grupo de Telegram "Python CDMX"**
+**AI-Powered Telegram Moderator for Python Communities**
 
 ---
 
 ## 🎯 **¿Qué es este bot?**
 
-Este es un **bot moderador automático** que utiliza **Inteligencia Artificial** para mantener un ambiente sano y productivo en el grupo de Telegram de la comunidad Python CDMX.
+**ViperGuard AI** es un **bot moderador automático** que utiliza **Inteligencia Artificial** para mantener un ambiente sano y productivo en grupos de Telegram de comunidades Python.
 
 El bot analiza cada mensaje enviado al grupo en tiempo real y toma decisiones inteligentes sobre si debe:
 - ✅ **Aprobar** el mensaje (la mayoría de casos)
@@ -91,17 +91,21 @@ El bot utiliza **Google Gemini 1.5 Flash** para analizar el contexto y contenido
 ## 📁 **Estructura del Proyecto**
 
 ```
-src/
-├── settings.py                    # ⚙️ Configuración global
-├── bot/
-│   ├── moderator/
-│   │   └── ai_analyzer.py         # 🧠 Cerebro de IA (Gemini)
-│   └── services/
-│       └── telegram_client.py     # 🤖 Cliente de Telegram
-├── models/                        # 🗄️ Modelos de base de datos
-└── schemas/                       # 📋 Validación de datos
-
-main.py                            # 🚀 Punto de entrada principal
+📁 viperguard-ai-bot/
+├── 🚀 main.py                     # Punto de entrada principal
+├── 📋 README.md                   # Documentación del proyecto
+├── ⚙️ pyproject.toml              # Configuración y dependencias
+├── 🔒 uv.lock                     # Lock de dependencias
+├── 🛡️ .gitignore                 # Archivos ignorados por Git
+├── 🐍 .python-version             # Versión de Python requerida
+└── 📁 src/
+    ├── ⚙️ settings.py             # Configuración global
+    └── 📁 bot/
+        ├── 📁 handlers/           # Handlers de Telegram (vacía)
+        ├── 📁 moderator/
+        │   └── 🧠 ai_analyzer.py  # Cerebro de IA (Gemini + LangChain)
+        └── 📁 services/
+            └── 🤖 telegram_client.py # Cliente de Telegram asíncrono
 ```
 
 ### **Componentes Principales:**
@@ -124,8 +128,8 @@ main.py                            # 🚀 Punto de entrada principal
 
 ```bash
 # Clonar el repositorio
-git clone <url-del-repo>
-cd bot-moderador-python-cdmx
+git clone https://github.com/waterboxdeveloper/viperguard-ai-bot.git
+cd viperguard-ai-bot
 
 # Instalar dependencias con UV
 curl -LsSf https://astral.sh/uv/install.sh | sh
@@ -188,7 +192,7 @@ Este bot está diseñado para ser:
 
 **Eduardo Guzmán**
 
-Este bot es una **iniciativa personal** de Eduardo Guzmán, quien está explorando el desarrollo de **features en apps de mensajería con Inteligencia Artificial**. para **probarlo en un ambiente real** con la comunidad Python CDMX, contribuyendo al mismo tiempo con una herramienta útil para el grupo.
+**ViperGuard AI** es una **iniciativa personal** de Eduardo Guzmán, quien está explorando el desarrollo de **soluciones innovadoras con Inteligencia Artificial**. Como parte de su investigación en el campo de la IA aplicada, Eduardo decidió crear este bot moderador para **probarlo en un ambiente real** con comunidades Python, contribuyendo al mismo tiempo con una herramienta útil para los grupos.
 
 El proyecto representa una exploración práctica de:
 - Integración de LLMs en aplicaciones reales
@@ -212,6 +216,6 @@ Este proyecto es de código abierto y está disponible bajo la licencia MIT.
 
 ---
 
-**¡Gracias por usar el Bot Moderador Python CDMX! 🐍🤖**
+**¡Gracias por usar ViperGuard AI! 🐍🤖**
 
-*Desarrollado con ❤️ para la comunidad Python de la Ciudad de México*
+*Desarrollado con ❤️ para las comunidades Python de todo el mundo*
