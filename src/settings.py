@@ -80,8 +80,7 @@ class Settings(BaseSettings):
     ai_model: str = Field(
         default="gemini-1.5-flash",
         description="🧠 Modelo de IA a utilizar para moderación"
-        # gemini-1.5-flash = Rápido y económico (recomendado)
-        # gemini-1.5-pro = Más inteligente pero más lento
+        
     )
     
     ai_temperature: float = Field(
@@ -116,7 +115,7 @@ class Settings(BaseSettings):
     )
     
     # ===================================================================
-    # 🛡️ CONFIGURACIÓN DE MODERACIÓN (LO MÁS IMPORTANTE)
+    # 🛡️ CONFIGURACIÓN DE MODERACIÓN 
     # ===================================================================
     
     moderation_enabled: bool = Field(
@@ -243,7 +242,7 @@ class Settings(BaseSettings):
         return str(self.environment).lower() == "staging"
     
     # ===================================================================
-    # 🔗 COMPATIBILIDAD CON LANGCHAIN (SÚPER IMPORTANTE)
+    # 🔗 COMPATIBILIDAD CON LANGCHAIN 
     # ===================================================================
     
     @computed_field
